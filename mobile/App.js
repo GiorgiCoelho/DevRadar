@@ -1,7 +1,12 @@
 import React from 'react';
-import { StatusBar } from 'react-native';
+import { StatusBar, YellowBox } from 'react-native';
 
 import Routes from './src/routes';
+
+//Só pra evitar a caixa amarela de aviso. Mas não é o certo.
+YellowBox.ignoreWarnings([
+  'Unrecognized WebSocket'
+])
 
 export default function App() {
   return (
